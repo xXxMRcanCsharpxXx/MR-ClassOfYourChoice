@@ -6,7 +6,6 @@ Shoe
 Retro1 = new Shoe();
 thevault.Shoes.Add(Retro1);
 
-
 bool isRunning = true;
 while (isRunning)
 {
@@ -24,22 +23,26 @@ while (isRunning)
 
     string input = Console.ReadLine().ToLower();
 
+    // Step 1: ask yourself whether the function is of the shoe or the vault
+    // Step 2: call the method on an object of the respective type^
+    // Step 3: Implement that method
+
     switch (input)
     {
         case "1":
-            Shoe.AddAShoeToYourVault();
+            thevault.AddShoeToTheVault();
             break;
         case "2":
             Shoe.ViewYourWholeVault();
             break;
         case "3":
-            Shoe.OutfitInspiration();
+            //Shoe.OutfitInspiration();
             break;
         case "4":
-            Shoe.RandomShoeGenerator();
+            //Shoe.RandomShoeGenerator();
             break;
         case "5":
-            Shoe.DeleteAShoeFromYourVault();
+            //Shoe.DeleteAShoeFromYourVault();
             break;
         case "d":
             isRunning = false;
