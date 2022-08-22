@@ -33,7 +33,7 @@ while (isRunning)
             thevault.AddShoeToTheVault();
             break;
         case "2":
-            Shoe.ViewYourWholeVault();
+            thevault.ViewYourWholeVault();
             break;
         case "3":
             //Shoe.OutfitInspiration();
@@ -48,7 +48,7 @@ while (isRunning)
             isRunning = false;
             Console.WriteLine("If you buy a new pair, be sure to update your Vault");
             break;
-        default:
+        default:-
             break;
     }
 }

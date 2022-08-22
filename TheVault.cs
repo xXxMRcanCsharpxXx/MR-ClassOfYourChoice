@@ -22,17 +22,18 @@ namespace template_csharp_class_of_your_choice
         public void AddShoeToTheVault()
         {
             // this is where we would go through and ask the users about their shoes
+            Console.Clear();
             Console.WriteLine("What brand is your shoe?");
             Console.WriteLine("1. Jordan\n2. Nike\n3. Adidas\n4. Puma\n5. Vans");
             Brand brand = (Brand) Int32.Parse(Console.ReadLine()) - 1;
 
             Console.Clear();
             Console.WriteLine("What model is your shoe?");
-            Model model = (Model)Int32.Parse(Console.ReadLine());
+            string model = Console.ReadLine();
 
             Console.Clear();
             Console.WriteLine("What size is your shoe?");
-            Size size = (Size)Int32.Parse(Console.ReadLine());
+            double size = double.Parse(Console.ReadLine());
 
             Console.Clear();
             Console.WriteLine("What is the main color of your shoe?");
@@ -64,11 +65,16 @@ namespace template_csharp_class_of_your_choice
 
         public void ViewYourWholeVault()
         {
-            Console.WriteLine(Shoes);
+            foreach(Shoe shoe in Shoes)
+            {
+            Console.WriteLine(shoe.Model);
+
+            }
+            Console.ReadKey();
         }
 
 
-        public void ()
+    
 
 
 
